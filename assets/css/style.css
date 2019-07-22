@@ -1,0 +1,21 @@
+.main{
+    padding: 1px !important;
+    font-size: 10px !important;
+    width:40% !important;
+    border: white 3px solid !important;
+    float:left !important;
+}
+
+#M{
+    padding-top: 40px;
+    left: 0px;
+}
+
+#image{
+    width:200px;
+    height:99px;
+}
+
+h6{
+    font-weight: bold;
+}

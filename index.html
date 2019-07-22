@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-database.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Had Happened Was...</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <base target="_blank">
+  <!--Navbar-->
+  <div class="navbar-fixed">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo hide-on-small-only">What Had Happened Was...</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+  </ul>
+  <div class="container">
+    <div class="row" id="divide">
+      <div class="col s5">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="./assets/images/birthday1.jpg">
+              <div class="caption right-align">
+              </div>
+            </li>
+            <li>
+              <img src="./assets/images/birthday2.jpg">
+              <div class="caption center-align">
+              </div>
+            </li>
+            <li>
+              <img src="./assets/images/birthday3.jpg">
+              <div class="caption left-align">
+              </div>
+            </li>
+            <li>
+              <img src="./assets/images/birthday4.jpg">
+              <div class="caption right-align">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="col s7">
+        <input value="" id="name" type="text" class="validate" placeholder="12 characters - letters & numbers only">
+        <label class="active" for="first_name2">Username</label>
+        <div id="invalidName" class="red-text">
+        </div>
+        <br>
+        <form>
+          <br>
+          <input type="date" class="col-lg-6 col-md-6 datepicker" id="date" width="200px">
+          <label class="active" for="first_name2">Date</label>
+          <div id="invalidDate" class="red-text">
+          </div>
+          <br>
+        </form>
+        <button class="btn waves-effect waves-light btn-large" id="search" type="submit" name="action">Search
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+      <!--end row-->
+    </div>
+    <!--end row-->
+  </div>
+  <!--end container-->
+  <!--Section: Info-->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/images/question.jpg " id="image" alt="">
+          </div>
+          <a class="waves-effect waves-light btn-large">SHARE</a>
+        </div>
+        <div id="share" class="card-content">
+          <!--Dynamic shared content here-->
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/images/NYT.jpg" id="image" alt="">
+          </div>
+          <a class="waves-effect waves-light btn-large">NYT</a>
+        </div>
+        <div id="nyt" class="card-content">
+          <!--New york times content here-->
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/images/events.jpg" id="image" alt="">
+          </div>
+          <a class="waves-effect waves-light btn-large">HISTORY</a>
+        </div>
+        <div id="history" class="card-content">
+          <!--History input here-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="section teal darken-2 white-text center">
+    <p class="flow-text">What Had Happened Was... &copy; 2019</p>
+  </footer>
+
+  <!-- Moment.js -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--Site specific JS-->  
+  <script src="assets/javascript/history.js"></script>
+  <script src="assets/javascript/nyt.js"></script>
+  <script src="assets/javascript/firebase.js"></script>
+  <script src="assets/javascript/frontend.js"></script>
+</body>
+
+</html>
