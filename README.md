@@ -7,6 +7,15 @@ WHHW is an intuitive way to search for events and NYT articles on a certain day,
 ### The goal of this project
 The goal was to make a simple page and catch the attention of potentially a room full of people with a quick, easy, and unique social experience based around dates in history. 
 
+### File Structure
+
+### Instructions
+
+### Deployment & Screenshot
+[Link to Deployment](https://jwilly117.github.io/CarCompanion/)
+
+
+
 ### Future of this project
 The future potential of this project would be to enhance the user experience with a more fluid page, and to source information from more sources. For example, one idea was show information about famous birthdays on specified dates in history. 
 
