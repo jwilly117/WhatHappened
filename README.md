@@ -12,7 +12,7 @@ The goal was to make a simple page and catch the attention of potentially a room
 ### Instructions
 
 ### Deployment & Screenshot
-[Link to Deployment](https://jwilly117.github.io/CarCompanion/)
+[Link to Deployment](https://jwilly117.github.io/WhatHappened/)
 
 
 
