@@ -1,7 +1,7 @@
 # What Had Happened Was (WHHW)
 <br>
 
-### Summary
+### Summary 
 WHHW is an intuitive way to search for events and NYT articles on a certain day, primarily a persons birthday. It pulls from the NYT API from their database of articles and from the another API for famous events in history. It then allows users to input their name or a name of their choice and share an article of their choosing to the social panel over on the left hand side of the screen
 
 ### The goal of this project
